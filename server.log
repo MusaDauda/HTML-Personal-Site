@@ -1,0 +1,5 @@
+127.0.0.1 - - [30/May/2026 16:17:42] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2026 16:17:42] "GET /images/Musa%20passport%201%20.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2026 16:17:42] "GET /css/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2026 16:17:46] "GET /hobbies.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2026 16:17:47] "GET /contact-me.html HTTP/1.1" 200 -

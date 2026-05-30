@@ -3,102 +3,122 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Musa's Personal Website </title>
-	<link rel="stylesheet" href= " css/styles.css">
+	<title>Musa Dauda | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5i/fggR536481T5208bN3GkRk1FqP1yZ2d8/yI5q1vI1P/" crossorigin="anonymous"></script>
 </head>
-<body>
-	<table cellspacing="20">
-		<tr>
-			<td><img class="circular" src="images/Musa passport 1 .jpg" width="180" height="200" alt="My Passport Photograph"></td>
+<body hx-boost="true">
 
-			<td>
-				<h1>Musa Dauda</h1>
-				<p><em>Mechanical Engineering Student</em> at <strong><a href="abu.edu.ng" target="_blank" >Ahmadu Bello University</a></strong></p>
-		<p> I am currently studying software engineering at <a href="https://alxafrica.com" target="_blank">ALX,</a> I want to use technology and artificial intelligence to change the world and build a sustainable enterprise for businesses in Africa.</p></td>
-		</tr>
+    <nav class="navbar fade-in-down">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MD.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	</table>
-	
-	
-		<hr>
-		<h3>Certifications and Teaching</h3>
-		<ul>
-			<li>Coursera IoT Course</li>
-			<li>Udacity Solution Architect with Azure</li>
-			<li>Google's IT Support Fundamentals</li>
-			<li>Google's IT Automation with Python</li>
+    <main id="content" class="fade-in-up">
+        <header class="hero-section">
+            <div class="profile-container">
+                <img class="profile-img pulse-on-hover" src="images/Musa passport 1 .jpg" alt="Musa Dauda Portrait">
+            </div>
+            <div class="intro-text">
+                <h1 class="stagger-1">Musa Dauda</h1>
+                <h2 class="stagger-2">Mechanical Engineering Student & Aspiring Software Engineer</h2>
+                <p class="stagger-3">
+                    Currently studying software engineering at <a href="https://alxafrica.com" target="_blank" class="hover-link">ALX</a>.
+                    I aim to leverage technology and artificial intelligence to drive change and build sustainable enterprises across Africa.
+                </p>
+            </div>
+        </header>
 
-		</ul>
-		<hr>
-		<h3>Work Experience</h3>
-		<table cellspacing="10">
-			<thead>
-				<tr>
-					<th>Dates</th>
-					<th>Work</th>
-					<th>Projects</th>
-				</tr>
-			</thead>
-			<tbody>
-			 <tr>	
-			  <td>2016-2017</td>
-			  <td>Lead Designer for Solar Powered Electric Train Project</td>
-			  <td>Collaborated with great minds, from enggineers to computer scientist</td>
-			</tr>
-			<tr>
-			  <td>2022 present</td>
-			  <td>Technical Lead for Cloud and AI at ABUDev</td>
-			  <td>Proposed a virtual conference for Tech newbies</td>
-			 </tr>
+        <section class="details-section reveal-on-scroll">
+            <div class="card experience">
+                <h3>Work Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2022 - Present</span>
+                        <h4>Technical Lead for Cloud and AI</h4>
+                        <p class="company">ABUDev</p>
+                        <p class="desc">Proposed and organized a virtual conference targeted at introducing newcomers to the tech ecosystem.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2016 - 2017</span>
+                        <h4>Lead Designer</h4>
+                        <p class="company">Solar Powered Electric Train Project</p>
+                        <p class="desc">Collaborated in a multidisciplinary team spanning engineering and computer science disciplines.</p>
+                    </div>
+                </div>
+            </div>
 
-			</tbody>
-		</table>
-		<hr>
-		<h3>Skills</h3>
-		<table cellspacing="10">
-			<tr>
-				
-				<td>
-					<table>
-			<tr>
-				<td>C Programming Language</td>
-				<td>⭐⭐⭐</td>
-			</tr>
-			<tr>
-				<td>Python Programming Language</td>
-				<td>⭐⭐⭐</td>
-			</tr>
-			<tr>
-				<td>Excel</td>
-				<td>⭐⭐</td>
+            <div class="card certifications">
+                <h3>Certifications</h3>
+                <ul class="styled-list">
+                    <li>Coursera IoT Course</li>
+                    <li>Udacity Solution Architect with Azure</li>
+                    <li>Google's IT Support Fundamentals</li>
+                    <li>Google's IT Automation with Python</li>
+                </ul>
+            </div>
+        </section>
 
-			</tr>
-		</table>
-				</td>
-				<td>
-					<table>
-			<tr>
-				<td>Linux Operating System</td>
-				<td>⭐⭐⭐⭐</td>
+        <section class="skills-section reveal-on-scroll">
+            <h3>Technical Expertise</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-name">Linux Operating System</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">IT Support Fundamentals</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">C Programming</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Python Programming</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Vim/Emacs</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 40%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Excel</span>
+                    <div class="skill-bar"><div class="skill-level" style="width: 40%"></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-		    </tr>
-		    <tr>
-		    	<td>Vim/Emacs</td>
-		    	<td>⭐⭐</td>
-		    </tr>
-		    <tr>
-		    	<td>IT Support Fundamentals</td>
-		    	<td>⭐⭐⭐⭐</td>
-		    </tr>
-		</table>
-				</td>
-			</tr>
+    <footer class="fade-in">
+        <p>&copy; 2023 Musa Dauda. All rights reserved.</p>
+    </footer>
 
-		</table>
-
-		
-		<a href="hobbies.html">My Hobbies</a>
-		<a href="contact-me.html">Contact me</a>
-
+    <script>
+        // Simple script to add reveal class on scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal-on-scroll");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        setTimeout(reveal, 100);
+    </script>
 </body>
 </html>
