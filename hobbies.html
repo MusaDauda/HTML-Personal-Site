@@ -3,18 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About my hobbies</title>
-	<link rel="stylesheet" href= "css/styles.css">
+	<title>Hobbies | Musa Dauda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5i/fggR536481T5208bN3GkRk1FqP1yZ2d8/yI5q1vI1P/" crossorigin="anonymous"></script>
 </head>
-<body>
-	<h3>My Hobbies</h3>
-		<ol>
-			<li><a href="coursera.org" target="_blank">Learning</a></li>
-			<li >Programming</li>
-			<li>Problem Solving</li>
-			<li>Inventing</li>
+<body hx-boost="true">
 
-		</ol>
+    <nav class="navbar fade-in-down">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MD.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hobbies.html" class="active">Hobbies</a></li>
+                <li><a href="contact-me.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="content" class="fade-in-up inner-page">
+        <header class="page-header">
+            <h1 class="stagger-1">My Hobbies</h1>
+            <p class="stagger-2 subtitle">Activities that keep me inspired outside of work and studies.</p>
+        </header>
+
+        <section class="hobbies-section stagger-3">
+            <div class="hobby-card">
+                <div class="hobby-icon">📚</div>
+                <h3>Continuous Learning</h3>
+                <p>Constantly exploring new topics and expanding my knowledge base through platforms like <a href="https://coursera.org" target="_blank" class="hover-link">Coursera</a>.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-icon">💻</div>
+                <h3>Programming</h3>
+                <p>Writing code, building applications, and exploring the latest software development frameworks and technologies.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-icon">🧩</div>
+                <h3>Problem Solving</h3>
+                <p>Tackling complex logical challenges, algorithms, and finding optimized solutions to real-world problems.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-icon">⚙️</div>
+                <h3>Inventing & Tinkering</h3>
+                <p>Building physical and digital prototypes, merging my mechanical engineering background with software.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>&copy; 2023 Musa Dauda. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
